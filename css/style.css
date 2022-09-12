@@ -304,13 +304,29 @@ body {
   text-transform: uppercase;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
 }
-.container .hidden-text {
-  background: url("/img/main-bg.jpg");
+.container .mac {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("/img/main-bg-2.jpg");
   background-size: cover;
+  min-width: 420px;
   max-width: 420px;
+  min-height: 70px;
 }
-.container .hidden-text .hide {
-  visibility: hidden;
+.container .mac .congrats {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  width: 60%;
+  border-radius: 24px;
+  font-size: 20px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+.container .mac .congrats .yellow {
+  color: rgb(224, 224, 42);
 }
 
 @media screen and (max-width: 380px) {

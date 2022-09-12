@@ -294,12 +294,23 @@ body {
         }
     }
 
-    .hidden-text {
-        @include main-bg();
+    .mac {
+        @include flex();
+        @include main-bg-2();
+        min-width: 420px;
         max-width: 420px;
+        min-height: 70px;
 
-        .hide {
-            visibility: hidden;
+        .congrats {
+            @include glass();
+            width: 60%;
+            border-radius: 24px;
+            font-size: 20px;
+            text-shadow: $text-shadow;
+
+            .yellow {
+                color: rgb(224, 224, 42);
+            }
         }
     }
 }
