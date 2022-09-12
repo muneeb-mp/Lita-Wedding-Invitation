@@ -1,0 +1,329 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Alata", sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("/img/main-bg.jpg");
+  background-size: cover;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+  overflow-x: hidden;
+}
+.container section {
+  min-height: 100vh;
+  max-width: 420px;
+}
+.container .cover-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("/img/main-bg.jpg");
+  background-size: cover;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+}
+.container .cover-page .cover-img {
+  width: 70%;
+}
+.container .cover-page .wedding-cover-text {
+  font-size: 20px;
+  color: #000;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+  margin-top: 56px;
+}
+.container .cover-page .wedding-couple-name {
+  font-family: "Sacramento", cursive;
+  color: #800bba;
+  font-size: 56px;
+  font-weight: 900;
+  margin: 24px 0;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+.container .cover-page .wedding-date {
+  font-size: 20px;
+  color: #000;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+.container .cover-page .open-invitation {
+  font-family: "Alata", sans-serif;
+  text-decoration: none;
+  color: #fff;
+  background-color: #800bba;
+  font-size: 18px;
+  padding: 8px 35px;
+  margin-top: 24px;
+  border-radius: 32px;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+.container .open-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("/img/main-bg-2.jpg");
+  background-size: cover;
+  width: 100%;
+  flex-direction: column;
+}
+.container .open-container .circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  width: 90%;
+  height: 24rem;
+  flex-direction: column;
+  border-radius: 50%;
+}
+.container .open-container .circle .circle-img {
+  width: 60%;
+  margin-bottom: 12px;
+}
+.container .open-container .circle .circle-text-header {
+  color: #800bba;
+  font-size: 15px;
+  margin-bottom: 12px;
+  font-weight: bold;
+}
+.container .open-container .circle .circle-text {
+  color: #000;
+  width: 90%;
+  font-size: 12px;
+}
+.container .open-container #icon {
+  margin-top: 30px;
+  width: 60px;
+  cursor: pointer;
+}
+.container .name-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("/img/main-bg.jpg");
+  background-size: cover;
+  width: 100%;
+}
+.container .name-container .name-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  flex-direction: column;
+  border-radius: 15px;
+  width: 95%;
+}
+.container .name-container .name-card .circle-img {
+  width: 70%;
+  margin-top: 32px;
+}
+.container .name-container .name-card .inv-text {
+  font-family: "Shadows Into Light", cursive;
+  font-size: 22px;
+  font-weight: 700;
+  margin-top: 16px;
+}
+.container .name-container .name-card .main-text {
+  font-family: "Caveat", cursive;
+  color: #800bba;
+  font-size: 32px;
+  font-weight: 900;
+  margin: 28px 0 0 0;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+.container .name-container .name-card .sub-main-text1, .container .name-container .name-card .sub-main-text2 {
+  color: #000;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+  font-weight: 300;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 500;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+  margin-bottom: 28px;
+  width: 90%;
+}
+.container .name-container .name-card .sub-main-text2 {
+  margin-bottom: 56px;
+}
+.container .name-container .name-card .with {
+  font-family: "Elsie Swash Caps", cursive;
+  font-size: 48px;
+  color: #000;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+.container .inv-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("/img/main-bg-2.jpg");
+  background-size: cover;
+  width: 100%;
+}
+.container .inv-container .inv-card {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  flex-direction: column;
+  border-radius: 15px;
+  width: 95%;
+}
+.container .inv-container .inv-card .ring-img {
+  width: 15%;
+  margin: 14px 0;
+}
+.container .inv-container .inv-card .nikah-heading {
+  font-family: "Sacramento", cursive;
+  font-size: 42px;
+  color: #800bba;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+.container .inv-container .inv-card .date {
+  color: #000;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+  margin-bottom: 8px;
+}
+.container .inv-container .inv-card .time {
+  color: #000;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+  margin-bottom: 32px;
+}
+.container .inv-container .inv-card .location-icon {
+  color: #000;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+  font-size: 20px;
+  margin-bottom: 8px;
+  width: 90%;
+  color: red;
+  letter-spacing: 1.5px;
+}
+.container .inv-container .inv-card .location {
+  color: #000;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+  width: 90%;
+  margin-bottom: 5px;
+}
+.container .inv-container .inv-card .open-map {
+  font-family: "Alata", sans-serif;
+  text-decoration: none;
+  color: #fff;
+  background-color: #800bba;
+  font-size: 18px;
+  padding: 8px 35px;
+  margin: 24px 0 32px 0;
+  border-radius: 32px;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+.container .safety {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("/img/main-bg.jpg");
+  background-size: cover;
+  width: 100%;
+}
+.container .safety .proto-card {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  flex-direction: column;
+  border-radius: 15px;
+  width: 95%;
+}
+.container .safety .proto-card .cover-img2 {
+  width: 50%;
+}
+.container .safety .proto-card .instruc {
+  color: #000;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+  font-weight: 700;
+  width: 90%;
+  font-style: italic;
+  margin-bottom: 32px;
+  line-height: 18px;
+}
+.container .safety .proto-card .img-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.container .safety .proto-card .img-container .img {
+  margin-bottom: 28px;
+}
+.container .safety .proto-card .img-container .img .mask {
+  width: 30%;
+}
+.container .safety .proto-card .img-container .img h3 {
+  color: #000;
+  font-size: 12px;
+  line-height: 14px;
+}
+.container .safety .proto-card .sixty-nine {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.container .safety .proto-card .thanks {
+  color: #800bba;
+  margin-bottom: 15px;
+  font-family: "Shadows Into Light", cursive;
+  font-size: 32px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+.container .hidden-text {
+  background: url("/img/main-bg.jpg");
+  background-size: cover;
+  max-width: 420px;
+}
+.container .hidden-text .hide {
+  visibility: hidden;
+}
+
+@media screen and (max-width: 380px) {
+  .container section {
+    max-width: 380px;
+  }
+  .container .circle-container .circle {
+    width: 95%;
+    height: 22rem;
+  }
+  .container .circle-container .circle-text-header {
+    font-size: 13px;
+  }
+  .container .circle-container .circle-text {
+    font-size: 11px;
+  }
+}/*# sourceMappingURL=style.css.map */

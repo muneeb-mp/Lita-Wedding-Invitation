@@ -1,0 +1,333 @@
+@import "config";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Alata', sans-serif;
+    
+}
+
+.container {
+    @include flex();
+    @include main-bg();
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    overflow-x: hidden;
+
+    section {
+        min-height: 100vh;
+        max-width: 420px;
+    }
+
+    .cover-page {
+        @include flex();
+        @include main-bg();
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 100%;
+
+        .cover-img {
+            width: 70%;
+        }
+
+        .wedding-cover-text {
+            font-size: 20px;
+            color: $font-black;
+            text-shadow: $text-shadow;
+            margin-top: 56px;
+        }
+
+        .wedding-couple-name {
+            // font-family: 'Cinzel Decorative', cursive;
+            font-family: 'Sacramento', cursive;
+            color: $cover-font;
+            font-size: 56px;
+            font-weight: 900;
+            margin: 24px 0;
+            text-shadow: $text-shadow;
+        }
+
+        .wedding-date {
+            font-size: 20px;
+            color: $font-black;
+            text-shadow: $text-shadow;
+        }
+
+        .open-invitation {
+            font-family: 'Alata', sans-serif;
+            text-decoration: none;
+            color: $font-white;
+            background-color: $cover-font;
+            font-size: 18px;
+            padding: 8px 35px;
+            margin-top: 24px;
+            border-radius: 32px;
+            box-shadow: $text-shadow;
+        }
+    }
+
+    .open-container {
+        @include flex();
+        @include main-bg-2();
+        width: 100%;
+        flex-direction: column;
+
+        .circle {
+            @include flex();
+            @include glass();
+            width: 90%;
+            height: 24rem;
+            flex-direction: column;
+            border-radius: 50%;
+
+            .circle-img {
+                width: 60%;
+                margin-bottom: 12px;
+            }
+            
+            .circle-text-header {
+                color: $cover-font;
+                font-size: 15px;
+                margin-bottom: 12px;
+                font-weight: bold;
+            }
+            
+            .circle-text {
+                color: $font-black;
+                width: 90%;
+                font-size: 12px;
+            }
+        }
+
+        #icon {
+            margin-top: 30px;
+            width: 60px;
+            cursor: pointer;
+        }
+    }
+
+    .name-container {
+        @include flex();
+        @include main-bg();
+        width: 100%;
+
+        .name-card {
+            @include flex();
+            @include glass();
+            backdrop-filter: blur(2px);
+            flex-direction: column;
+            border-radius: 15px;
+            width: 95%;
+
+            .circle-img {
+                width: 70%;
+                margin-top: 32px;
+            }
+
+            .inv-text {
+                font-family: 'Shadows Into Light', cursive;
+                font-size: 22px;
+                font-weight: 700;
+                margin-top: 16px;
+            }
+            
+            .main-text {
+                font-family: 'Caveat', cursive;
+                color: $cover-font;
+                font-size: 32px;
+                font-weight: 900;
+                margin: 28px 0 0 0;
+                text-shadow: $text-shadow;
+            }
+            
+            .sub-main-text1, .sub-main-text2 {
+                @include black-font();
+                font-weight: 300;
+                font-size: 14px;
+                font-style: italic;
+                font-weight: 500;
+                text-shadow: $text-shadow;
+                margin-bottom: 28px;
+                width: 90%;
+            }
+
+            .sub-main-text2 {
+                margin-bottom: 56px;
+            }
+            
+            .with {
+                font-family: 'Elsie Swash Caps', cursive;
+                font-size: 48px;
+                color: $font-black;
+                text-shadow: $text-shadow;
+            }
+        }
+    }
+
+    .inv-container {
+        @include flex();
+        @include main-bg-2();
+        width: 100%;
+
+        .inv-card{
+            @include glass();
+            @include flex();
+            backdrop-filter: blur(2px);
+            flex-direction: column;
+            border-radius: 15px;
+            width: 95%;
+
+            .ring-img {
+                width: 15%;
+                margin: 14px 0;
+            }
+
+            .nikah-heading {
+                font-family: 'Sacramento', cursive;
+                font-size: 42px;
+                color: $cover-font;
+                text-shadow: $text-shadow;
+            }
+
+            .date {
+                @include black-font();
+                margin-bottom: 8px;
+            }
+
+            .time {
+                @include black-font();
+                margin-bottom: 32px;
+            }
+
+            .location-icon {
+                @include black-font();
+                font-size: 20px;
+                margin-bottom: 8px;
+                width: 90%;
+                color: red;
+                letter-spacing: 1.5px
+            }
+
+            .location {
+                @include black-font();
+                width: 90%;
+                margin-bottom: 5px;
+            }
+            
+            .open-map {
+                font-family: 'Alata', sans-serif;
+                text-decoration: none;
+                color: $font-white;
+                background-color: $cover-font;
+                font-size: 18px;
+                padding: 8px 35px;
+                margin: 24px 0 32px 0;
+                border-radius: 32px;
+                box-shadow: $text-shadow;
+            }
+        }
+    }
+
+    .safety {
+        @include flex();
+        @include main-bg();
+        width: 100%;
+
+        .proto-card {
+            @include glass();
+            @include flex();
+            backdrop-filter: blur(2px);
+            flex-direction: column;
+            border-radius: 15px;
+            width: 95%;
+
+            .cover-img2 {
+                width: 50%;
+            }
+
+            .instruc {
+                @include black-font();
+                font-weight: 700;
+                width: 90%;
+                font-style: italic;
+                margin-bottom: 32px;
+                line-height: 18px;
+            }
+
+            .img-container {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+
+                .img {
+                    margin-bottom: 28px;
+
+                    .mask {
+                        width: 30%;
+                    }
+                    h3{
+                        color: $font-black;
+                        font-size: 12px;
+                        line-height: 14px;
+                    }
+                }
+
+            }
+            .sixty-nine {
+                font-size: 12px;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+            }
+            .thanks {
+                color: $cover-font;
+                margin-bottom: 15px;
+                font-family: 'Shadows Into Light', cursive;
+                font-size: 32px;
+                letter-spacing: 4px;
+                text-transform: uppercase;
+                text-shadow: $text-shadow;
+            }
+        }
+    }
+
+    .hidden-text {
+        @include main-bg();
+        max-width: 420px;
+
+        .hide {
+            visibility: hidden;
+        }
+    }
+}
+
+
+
+
+
+
+@media screen and (max-width:380px) {
+    .container {
+        section {
+            max-width: 380px;
+        }
+
+        .circle-container{
+            .circle {
+                width: 95%;
+                height: 22rem;
+            }
+
+            .circle-text-header {
+                font-size: 13px;
+            }
+
+            .circle-text {
+                font-size: 11px;
+            }
+        }
+    }
+}
